@@ -50,6 +50,7 @@ public class Application {
                 session.getTransaction().commit();
                 session.refresh(user);
                 System.out.println(user.getAge());
+                System.out.println("Some changes too");
                 session.close();
 
 
