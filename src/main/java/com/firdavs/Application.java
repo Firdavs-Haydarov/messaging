@@ -49,7 +49,7 @@ public class Application {
                 session.save(user);
                 session.getTransaction().commit();
                 session.refresh(user);
-                System.out.println(getMyBirthday() );
+                System.out.println(user.getAge());
                 session.close();
 
 
